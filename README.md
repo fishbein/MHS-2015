@@ -1,5 +1,5 @@
 #Marlboro High School Class of 2015 Website
-##Users will be able to submit fundraising ideas, vote on others, and see the latest news related to the class of 2015.
+####Users will be able to submit fundraising ideas, vote on others, and see the latest news related to the class of 2015.
 
 The MIT License (MIT)
 

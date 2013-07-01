@@ -1,1 +1,1 @@
-<?php include("config.php"); echo DB_NAME; ?>
+<?php include("views/header.php"); ?>

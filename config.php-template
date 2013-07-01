@@ -1,0 +1,7 @@
+<?php
+//database Information
+define("DB_HOSTNAME", "mysql.hostname.com");
+define("DB_USER", "myusername");
+define("DB_PASSWORD", "mypassword");
+define("DB_NAME", "my_database");
+?>

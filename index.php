@@ -64,9 +64,7 @@
       <li class="has-form">
         <form>
               <input type="text" placeholder="Username"><input type="text" placeholder="Password">
-            <div class="small-8 columns">
               <a href="#" class="alert button">Log In</a>
-            </div>
         </form>
       </li>
       <!--<li class="has-dropdown"><a href="#">Main Item 4</a>

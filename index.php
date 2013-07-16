@@ -1,6 +1,6 @@
 <?php include("views/header.php"); ?>
 <body>
-
+HI
   <nav class="top-bar">
   <ul class="title-area">
     <!-- Title Area -->

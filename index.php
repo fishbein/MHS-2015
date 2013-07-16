@@ -63,10 +63,20 @@
       <li><a href="#">Ideas</a>
       <li class="has-form">
         <form>
-              <input type="text" placeholder="Username"><input type="text" placeholder="Password">
+              <input type="text" placeholder="Username">
+      </li>
+      <li class="has-form">
+              <input type="text" placeholder="Password">
+      </li>
+      <li class="has-form">
               <a href="#" class="alert button">Log In</a>
         </form>
       </li>
+
+
+      
+              <a href="#" class="alert button">Log In</a>
+        </form>
       <!--<li class="has-dropdown"><a href="#">Main Item 4</a>
 
         <ul class="dropdown">

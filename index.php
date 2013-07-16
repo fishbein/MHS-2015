@@ -12,7 +12,7 @@
 
   <section class="top-bar-section">
     <!-- Left Nav Section -->
-    <ul class="left">
+    <!--<ul class="left">
       <li class="divider"></li>
       <li class="active"><a href="#">Main Item 1</a></li>
       <li class="divider"></li>
@@ -53,12 +53,27 @@
         </ul>
       </li>
       <li class="divider"></li>
-    </ul>
+    </ul>-->
 
     <!-- Right Nav Section -->
     <ul class="right">
+      
       <li class="divider hide-for-small"></li>
-      <li class="has-dropdown"><a href="#">Main Item 4</a>
+      <li><a href="#">Sign Up</a>
+      <li><a href="#">Ideas</a>
+      <li class="has-form">
+        <form>
+          <div class="row collapse">
+            <div class="small-8 columns">
+              <input type="text" placeholder="Username"><input type="text" placeholder="Password">
+            </div>
+            <div class="small-4 columns">
+              <a href="#" class="alert button">Log In</a>
+            </div>
+          </div>
+        </form>
+      </li>
+      <!--<li class="has-dropdown"><a href="#">Main Item 4</a>
 
         <ul class="dropdown">
           <li><label>Dropdown Level 1 Label</label></li>
@@ -90,7 +105,7 @@
           <li class="divider"></li>
           <li><a href="#">See all &rarr;</a></li>
         </ul>
-      </li>
+      </li>-->
       <li class="divider"></li>
       <li class="has-form">
         <form>

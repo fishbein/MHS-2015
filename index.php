@@ -62,7 +62,7 @@
       <li><a href="#">Sign Up</a>
       <li><a href="#">Ideas</a>
       <li class="has-dropdown"><a href="#">Log In</a>
-      <ul class="dropdown">
+      <ul class="dropdown" width="200">
         <form style="padding:10px;">
               <input type="text" placeholder="Username">
               <input type="text" placeholder="Password">

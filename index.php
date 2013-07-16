@@ -61,7 +61,7 @@
       <li class="divider hide-for-small"></li>
       <li><a href="#">Sign Up</a>
       <li><a href="#">Ideas</a>
-      <li class="has-dropdown">Log In</li>
+      <li class="has-dropdown"><a href="#">Log In</a></li>
       <ul class="dropdown">
         <form>
               <input type="text" placeholder="Username">

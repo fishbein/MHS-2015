@@ -64,9 +64,7 @@
       <li class="has-form">
         <form>
           <div class="row collapse">
-            <div class="small-8 columns">
               <input type="text" placeholder="Username"><input type="text" placeholder="Password">
-            </div>
             <div class="small-4 columns">
               <a href="#" class="alert button">Log In</a>
             </div>
@@ -107,7 +105,7 @@
         </ul>
       </li>-->
       <li class="divider"></li>
-      <li class="has-form">
+      <!--<li class="has-form">
         <form>
           <div class="row collapse">
             <div class="small-8 columns">
@@ -118,11 +116,11 @@
             </div>
           </div>
         </form>
-      </li>
+      </li>-->
       <li class="divider show-for-small"></li>
-      <li class="has-form">
+      <!--<li class="has-form">
         <a class="button" href="#">Button!</a>
-      </li>
+      </li>-->
     </ul>
   </section>
 </nav>

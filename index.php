@@ -1,6 +1,5 @@
 <?php include("views/header.php"); ?>
 <body>
-HI
   <nav class="top-bar">
   <ul class="title-area">
     <!-- Title Area -->
@@ -11,9 +10,9 @@ HI
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
   </ul>
 
-  <!--<section class="top-bar-section">-->
+  <section class="top-bar-section">
     <!-- Left Nav Section -->
-    <!--<ul class="left">
+    <ul class="left">
       <li class="divider"></li>
       <li class="active"><a href="#">Main Item 1</a></li>
       <li class="divider"></li>
@@ -54,10 +53,10 @@ HI
         </ul>
       </li>
       <li class="divider"></li>
-    </ul>-->
+    </ul>
 
     <!-- Right Nav Section -->
-    <!--<ul class="right">
+    <ul class="right">
       <li class="divider hide-for-small"></li>
       <li class="has-dropdown"><a href="#">Main Item 4</a>
 
@@ -110,7 +109,7 @@ HI
         <a class="button" href="#">Button!</a>
       </li>
     </ul>
-  </section>-->
+  </section>
 </nav>
 
 <div class="row">

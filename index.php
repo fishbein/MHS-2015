@@ -63,7 +63,7 @@
       <li><a href="#">Ideas</a>
       <li class="has-dropdown"><a href="#">Log In</a>
       <ul class="dropdown" style="width:200px;">
-        <form style="padding:10px;">
+        <form style="padding:10px; bacground:#EEE;border-color:#CCC;">
               <input type="text" placeholder="Username">
               <input type="text" placeholder="Password">
               <a href="#" class="alert button">Log In</a>

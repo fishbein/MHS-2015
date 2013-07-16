@@ -63,12 +63,10 @@
       <li><a href="#">Ideas</a>
       <li class="has-form">
         <form>
-          <div class="row collapse">
               <input type="text" placeholder="Username"><input type="text" placeholder="Password">
-            <div class="small-4 columns">
+            <div class="small-8 columns">
               <a href="#" class="alert button">Log In</a>
             </div>
-          </div>
         </form>
       </li>
       <!--<li class="has-dropdown"><a href="#">Main Item 4</a>

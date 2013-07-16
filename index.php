@@ -61,9 +61,10 @@
       <li class="divider hide-for-small"></li>
       <li><a href="#">Sign Up</a>
       <li><a href="#">Ideas</a>
-      <li>
+      <li class="has-form">
         <form>
-              <input type="text" placeholder="Username"><input type="text" placeholder="Password"><a href="#" class="alert button">Log In</a>
+              <input type="text" placeholder="Username"><input type="text" placeholder="Password">
+              <a href="#" class="alert button">Log In</a>
         </form>
       </li>
       <!--<li class="has-dropdown"><a href="#">Main Item 4</a>

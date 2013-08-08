@@ -1,6 +1,6 @@
 <?php include("views/header.php"); ?>
 <div class="row">
-<form>
+<form action="actions/signup.php" method="POST">
   <fieldset>
     <legend>Sign Up</legend>
     <div class="row">

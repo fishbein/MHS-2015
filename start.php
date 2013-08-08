@@ -1,4 +1,4 @@
 <?php
-	require("/class.php");
-	require("/config.php");
+	require("config.php");
+	require("class.php");
 ?>

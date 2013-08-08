@@ -1,6 +1,11 @@
 <?php include("views/header.php"); ?>
+<?php if($_GET['error']){ ?>
+  <div class="error">
+    <?php echo $_GET['error']; ?>
+  </div>
+<?php } ?>
 <div class="row">
-<form action="actions/signup.php" method="POST">
+<form action="signup_action.php" method="POST">
   <fieldset>
     <legend>Sign Up</legend>
     <div class="row">

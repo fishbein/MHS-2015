@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../css/foundation.css" />
   
 
-  <script src="../js/vendor/custom.modernizr.js"></script>
+  <script src="../jquery/vendor/custom.modernizr.js"></script>
   <script>
     $(document).ready(function() {
       $('h1').delay('100').fadeIn('slow');

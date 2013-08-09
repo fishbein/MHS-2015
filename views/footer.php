@@ -1,10 +1,10 @@
   <script>
   document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  ('__proto__' in {} ? 'jquery/vendor/zepto' : 'jquery/vendor/jquery') +
   '.js><\/script>')
   </script>
   
-  <script src="../js/foundation.min.js"></script>
+  <script src="../jquery/foundation.min.js"></script>
   <!--
   
   <script src="js/foundation/foundation.js"></script>

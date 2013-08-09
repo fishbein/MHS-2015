@@ -1,4 +1,7 @@
 <?php
+	function anchor($path, $text){
+		echo "<a href=".$path.">".$text."</a>";
+	}
 	class Authenticate{
 		function signup($name,$username,$email,$password,$emailme){
 			$error = new Error;

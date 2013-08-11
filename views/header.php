@@ -86,18 +86,23 @@
       <!--Always Shown-->
       <li><?php anchor(SITE_PATH, 'Home');?></li>
       <li class="divider hide-for-small"></li>
-      <li><?php anchor('ideas.php', 'Ideas'); ?></li>
+      <li><?php anchor('/ideas', 'Ideas'); ?></li>
       <li class="divider hide-for-small"></li>
-      <li><?php anchor('events.php', 'Events'); ?></li>
+      <li><?php anchor('/events', 'Events'); ?></li>
       <li class="divider hide-for-small"></li>
 
       <?php if(!$_SESSION['username']){ ?>
-      <li><?php anchor('signup.php', 'Sign Up'); ?></li>
+      <li><?php anchor('/signup', 'Sign Up'); ?></li>
       <li class="divider hide-for-small"></li>
-      <li><?php anchor('login.php', 'Log In'); ?></li>
+      <li><?php anchor('/login', 'Log In'); ?></li>
       <?php } else if($_SESSION['username']) { ?>
       <?php $user = user($_SESSION['username']); ?>
-      <li><?php anchor('profile.php',"Welcome, ".$user['name']);?></li>
+      <li class="has-dropdown"><?php anchor('#',"Welcome, ".$user['name']);?>
+          <ul class="dropdown">
+            <li><?php anchor("/profile","My Profile");?></li>
+            <li><?php anchor("/logout","Logout");?></li>
+          </ul>
+      </li>
       <?php } ?>
 
       <!--<li class="has-dropdown"><a href="#">Main Item 4</a>

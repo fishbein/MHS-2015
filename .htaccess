@@ -5,3 +5,7 @@ RewriteCond %{SCRIPT_FILENAME} !-f
 
 RewriteRule ^events/*$ ./events.php
 RewriteRule ^events/new*$ ./newevent.php
+RewriteRule ^ideas/*$ ./ideas.php
+RewriteRule ^login/*$ ./login.php
+RewriteRule ^logout/*$ ./logout.php
+RewriteRule ^signup/*$ ./signup.php

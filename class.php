@@ -49,4 +49,19 @@
 			header("Location:/login.php?error=Whoops! Your username or password is incorrect. FORGOT LINK - SIGN UP LINK");
 		}
 	}
+	class Event{
+		function view($param){
+			if(is_numeric($param)){
+				//Individual Event ID
+			}
+			else{
+				$month = date('m', strtotime($param));
+				$query = mysql_query("SELECT * FROM events WHERE month='$month'");
+				while($row = mysql_fetch_array($query))
+  				{
+  					return $row;
+  				}
+			}
+		}
+	}
 ?>

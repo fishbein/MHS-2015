@@ -25,5 +25,6 @@
   </tbody>
 </table>-->
 <p>No events scheduled for <?php echo $month; ?> yet.</p>
+<?php $event = new Event; $event->view('July');?>
 </div>
 <?php include("views/footer.php"); ?>

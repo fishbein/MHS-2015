@@ -82,16 +82,24 @@
     <ul class="right">
       
       <li class="divider hide-for-small"></li>
-      <li><a href="signup.php">Sign Up</a>
-      <li><a href="#">Ideas</a>
-      <li class="has-dropdown"><a href="#">Log In</a>
-      <ul class="dropdown" style="width:200px;">
-        <form style="padding: 15px; border: 1px solid #EEE;">
-              <input type="text" placeholder="Username">
-              <input type="text" placeholder="Password">
-              <a href="#" class="alert button">Log In</a>
-        </form>
-      </ul></li>
+
+      <!--Always Shown-->
+      <li><?php anchor(SITE_PATH, 'Home');?></li>
+      <li class="divider hide-for-small"></li>
+      <li><?php anchor('ideas.php', 'Ideas'); ?></li>
+      <li class="divider hide-for-small"></li>
+      <li><?php anchor('events.php', 'Events'); ?></li>
+      <li class="divider hide-for-small"></li>
+
+      <?php if(!$_SESSION['username']){ ?>
+      <li><?php anchor('signup.php', 'Sign Up'); ?></li>
+      <li class="divider hide-for-small"></li>
+      <li><?php anchor('login.php', 'Log In'); ?></li>
+      <?php } else if($_SESSION['username']) { ?>
+      <?php $user = user($_SESSION['username']); ?>
+      <li><?php anchor('profile.php',"Welcome, ".$user['name']);?></li>
+      <?php } ?>
+
       <!--<li class="has-dropdown"><a href="#">Main Item 4</a>
 
         <ul class="dropdown">

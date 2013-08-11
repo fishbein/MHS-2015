@@ -2,6 +2,13 @@
 	function anchor($path, $text){
 		echo "<a href=".$path.">".$text."</a>";
 	}
+	function user($username){
+		$query = mysql_query("SELECT * FROM users WHERE username='$username'");
+		while($row = mysql_fetch_array($query))
+  		{
+  			return $row;
+  		}
+	}
 	class Authenticate{
 		function signup($name,$username,$email,$password,$emailme){
 			$error = new Error;

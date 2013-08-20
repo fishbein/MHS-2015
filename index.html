@@ -18,6 +18,7 @@
   		$('p.one').delay('600').fadeIn('slow');
   		$('p.two').delay('1200').fadeIn('slow');
       $('h3').delay('1600').fadeIn('slow');
+      $('#info2').delay('2000').fadeIn('slow');
       $('.slide').delay('2000').fadeIn('slow');
 	});
   	
@@ -29,7 +30,7 @@
   <ul class="title-area">
     <!-- Title Area -->
     <li class="name">
-      <h1><a href="#">MHS 2015 </a></h1>
+      <h1><a href="#">Marlboro High School Class of 2015 </a></h1>
     </li>
     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -95,6 +96,17 @@
 <p class="two" style="display:none;">When it arrives, you'll be able to view updates and information regarding class events and fundraisers. In addition, you can submit and vote on fundraising ideas.</p>
 
 </div>
+
+<div id="info2" style="display:none; text-align:center; font-size: 22px; font-weight: 100; width:500px; margin: 0 auto;">
+<form action="email_submit.php" method="POST">
+<p><b>Put your email below and you'll know when the site is up!</b></p>
+  <input type="email" name="email" placeholder="johndoe@gmail.com">
+  <button type="submit">Keep Me Up to Date</button><br />
+  <small>we promise not to sell or use your email for purposes other than informing you when the site is live</small>
+</form>
+</div>
+
+
 <!--<div class="slide" style="display:none;width:600px;margin:0 auto;">
   <h3 style="display:none;">Sneak Peak</h3>
 <ul data-orbit>
@@ -112,13 +124,13 @@
   </li>
 </ul>
 </div>-->
-<div class="slide" id="preview" style="display:none; padding:15px;">
+<!--<div class="slide" id="preview" style="display:none; padding:15px;">
   <h3>Preview</h3>
   <img src="img/tease1.png">
   <img src="img/tease2.png">
   <img src="img/tease3.png">
   
-</div>
+</div>-->
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +

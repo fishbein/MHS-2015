@@ -98,12 +98,21 @@
 </div>
 
 <div id="info2" style="display:none; text-align:center; font-size: 22px; font-weight: 100; width:500px; margin: 0 auto;">
+<?php if($_GET['error']=='true'){ ?>
+<p style="color:red;">We've already got your email!</p>
+<?php } else if($_GET['error']=='nope') { ?>
+<p style="color:green;">Got it! We'll email you when the site is ready.</p>
+<?php } else { ?>
 <form action="email_submit.php" method="POST">
 <p><b>Put your email below and you'll know when the site is up!</b></p>
   <input type="email" name="email" placeholder="johndoe@gmail.com">
   <button type="submit">Keep Me Up to Date</button><br />
   <small>we promise not to sell or use your email for purposes other than informing you when the site is live</small>
 </form>
+<?php } ?>
+Created by <a href="http://twitter.com/fishbein">@fishbein</a>.
+<br />
+<small>This site is not directly related to Marlboro High School nor is it related to the Freehold Regional High School District.</small>
 </div>
 
 

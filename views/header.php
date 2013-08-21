@@ -86,15 +86,15 @@
       <!--Always Shown-->
       <li><?php anchor(SITE_PATH, 'Home');?></li>
       <li class="divider hide-for-small"></li>
-      <li><?php anchor(SITE_PATH.'/ideas', 'Ideas'); ?></li>
+      <li><?php anchor(SITE_PATH.'ideas', 'Ideas'); ?></li>
       <li class="divider hide-for-small"></li>
-      <li><?php anchor(SITE_PATH.'/events', 'Events'); ?></li>
+      <li><?php anchor(SITE_PATH.'events', 'Events'); ?></li>
       <li class="divider hide-for-small"></li>
 
       <?php if(!$_SESSION['username']){ ?>
-      <li><?php anchor(SITE_PATH.'/signup', 'Sign Up'); ?></li>
+      <li><?php anchor(SITE_PATH.'signup', 'Sign Up'); ?></li>
       <li class="divider hide-for-small"></li>
-      <li><?php anchor(SITE_PATH.'/login', 'Log In'); ?></li>
+      <li><?php anchor(SITE_PATH.'login', 'Log In'); ?></li>
       <?php } else if($_SESSION['username']) { ?>
       <?php $user = user($_SESSION['username']); ?>
       <li class="has-dropdown"><?php anchor('#',"Welcome, ".$user['name']);?>

@@ -13,7 +13,9 @@
 		function signup($name,$username,$email,$password,$emailme){
 			$error = new Error;
 			//Errors
-			if(!$name){$error->signup("Name");}
+			$q = mysql_query("SELECT * FROM users WHERE username='$username' OR email='$email'");
+			if(mysql_numrows($q)!=0){$error->signup("Exist");}
+			else if(!$name){$error->signup("Name");}
 			else if(!$username){$error->signup("Username");}
 			else if(!$email){$error->signup("Email");}
 			else if(!$password){$error->signup("Email");}
@@ -43,7 +45,10 @@
 	}
 	class Error{
 		function signup($type){
-			header("Location:/signup.php?error=".$type." is required.");
+			if($type=="Exists"){
+				header("Location:".SITE_PATH."signup.php?error=Your account already exists. <a href='/login'>Log in</a>?");
+			}
+			header("Location:".SITE_PATH."signup.php?error=".$type." is required.");
 		}
 		function login(){
 			header("Location:/login.php?error=Whoops! Your username or password is incorrect. FORGOT LINK - SIGN UP LINK");

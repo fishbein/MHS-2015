@@ -39,21 +39,21 @@
 			}
 			else{
 				$_SESSION['username'] = $username;
-				header("Location:index.php");
+				header("Location:".SITE_PATH);
 			}
 		}
 	}
 	class Error{
 		function signup($type){
 			if($type=="Exist"){
-				header("Location:".SITE_PATH."signup.php?error=Your account already exists. <a href='/login'>Log in</a>?");
+				header("Location:".SITE_PATH."signup?error=Your account already exists. <a href='".SITE_PATH."login'>Log in</a>?");
 			}
 			else{
-				header("Location:".SITE_PATH."signup.php?error=".$type." is required.");
+				header("Location:".SITE_PATH."signup?error=".$type." is required.");
 			}
 		}
 		function login(){
-			header("Location:/login.php?error=Whoops! Your username or password is incorrect. FORGOT LINK - SIGN UP LINK");
+			header("Location:".SITE_PATH."login?error=Whoops! Your username or password is incorrect. FORGOT LINK - SIGN UP LINK");
 		}
 	}
 	class Event{

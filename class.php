@@ -45,7 +45,7 @@
 	}
 	class Error{
 		function signup($type){
-			if($type=="Exists"){
+			if($type=="Exist"){
 				header("Location:".SITE_PATH."signup.php?error=Your account already exists. <a href='/login'>Log in</a>?");
 			}
 			header("Location:".SITE_PATH."signup.php?error=".$type." is required.");

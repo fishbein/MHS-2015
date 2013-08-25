@@ -48,7 +48,9 @@
 			if($type=="Exist"){
 				header("Location:".SITE_PATH."signup.php?error=Your account already exists. <a href='/login'>Log in</a>?");
 			}
-			header("Location:".SITE_PATH."signup.php?error=".$type." is required.");
+			else{
+				header("Location:".SITE_PATH."signup.php?error=".$type." is required.");
+			}
 		}
 		function login(){
 			header("Location:/login.php?error=Whoops! Your username or password is incorrect. FORGOT LINK - SIGN UP LINK");

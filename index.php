@@ -63,24 +63,10 @@
 </div>
 <?php } else { ?>
 <div id="info" style="text-align:center; font-size: 22px; font-weight: 100;">
-  <h1 style="display:none;">Coming Fall 2013</h1>
-  <p class="one" style="display:none;">The (un)official Marlboro High School Class of 2015 website will arrive in time for Junior year.</p>
-<p class="two" style="display:none;">When it arrives, you'll be able to view updates and information regarding class events and fundraisers. In addition, you can submit and vote on fundraising ideas.</p>
-
+  <h1 style="display:none;">MHS2015.com is here.</h1>
+  <p class="one" style="display:none;">The unofficial Marlboro High School Class of 2015 website has arrived.</p>
+<p class="two" style="display:none;"><a href="/signup">Sign up today</a> so you can to view updates and information regarding class events and fundraisers. In addition, you can submit and vote on fundraising ideas.</p>
 </div>
-
-<div id="info2" style="display:none; text-align:center; font-size: 22px; font-weight: 100; width:500px; margin: 0 auto;">
-<?php if($_GET['error']=='true'){ ?>
-<p style="color:red;">We've already got your email!</p>
-<?php } else if($_GET['error']=='nope') { ?>
-<p style="color:green;">Got it! We'll email you when the site is ready.</p>
-<?php } else { ?>
-<form action="email_submit.php" method="POST">
-<p><b>Put your email below and you'll know when the site is up!</b></p>
-  <input type="email" name="email" placeholder="johndoe@gmail.com">
-  <button type="submit">Keep Me Up to Date</button><br />
-  <small>we promise not to sell or use your email for purposes other than informing you when the site is live</small>
-</form>
 <?php } ?>
 Created by <a href="http://twitter.com/fishbein">@fishbein</a>.
 <br />

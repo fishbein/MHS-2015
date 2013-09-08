@@ -1,5 +1,6 @@
 <?php include("views/header.php"); ?>
-<div class="row">
+<h2>Coming soon.</h2>
+<!--<div class="row">
 <table style="margin:0 auto;">
   <thead>
     <tr>
@@ -29,5 +30,5 @@
       <td></td>
     </tr>
   </tbody>
-</table>
+</table>-->
 <?php include('/views/footer.php'); ?>

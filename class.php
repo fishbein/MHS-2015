@@ -34,10 +34,15 @@
 		function login($username,$password){
 			$error = new Error;
 			$query = mysql_query("SELECT * FROM users WHERE username='$username' AND password='$password'");
+			while($row = mysql_fetch_array($query))
+  			{
+  				$id = $row['id'];
+  			}
 			if(mysql_numrows($query)==0){
 				$error->login();
 			}
 			else{
+				if(mysql_numrows(mysql_query("SELECT * FROM admins WHERE uid='$id'"))!=0){$_SESSION['admin'] = 'admin';}
 				$_SESSION['username'] = $username;
 				header("Location:".SITE_PATH);
 			}
@@ -62,13 +67,31 @@
 				//Individual Event ID
 			}
 			else{
+				global $status;
 				$month = date('m', strtotime($param));
 				$query = mysql_query("SELECT * FROM events WHERE month='$month'");
 				while($row = mysql_fetch_array($query))
   				{
-  					return $row;
+  					  echo "<tr><td>".$row['name']."</td><td>".$row['date']." at ".$row['hour'].":".$row['minute']."</td><td>".$row['location']."</td><td>".$row['extra']."</td></tr>";
   				}
+  				if(mysql_numrows($query)==0){return $status = FALSE;}
 			}
+		}
+		function create($title, $month, $day, $year, $location, $note, $hour, $minute){
+			$error = new Error;
+			$date = $year.'-'.$month.'-'.$day;
+				mysql_query("INSERT INTO events VALUES(
+					'',
+					'$title',
+					'$date',
+					'$location',
+					'$note',
+					'$month',
+					'$hour',
+					'$minute')
+				");
+				header("Location:/events");
+			//}
 		}
 	}
 ?>

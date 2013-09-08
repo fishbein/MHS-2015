@@ -10,27 +10,18 @@
                   <th width="200">News/Event</th>
                   <th width="300">Date</th>
                   <th width="200">Location</th>
+                  <th width="200">Notes</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Pizza Sale</td>
-                  <td>Wednesday, September 18th at 3 PM</td>
-                  <td>Main Lobby</td>
-                </tr>
-                <tr>
-                  <td>Battle of The Classes</td>
-                  <td>???</td>
-                  <td>Gym</td>
-                </tr>
-                
+                 <?php $month = date('F'); $event = new Event; $event->view($month); ?>
               </tbody>
             </table>
             <?php anchor("events","See more...");?>
       </div>
       <div class="small-2 large-4 columns">
             <h3>Ideas</h3>
-            <table style="margin:0 auto;">
+            <!--<table style="margin:0 auto;">
               <thead>
                 <tr>
                   <th width="150">Submitter</th>
@@ -59,11 +50,13 @@
                   <td></td>
                 </tr>
               </tbody>
-            </table><br />
-            <?php anchor("ideas","See more...");?>
+            </table>-->
+            <h4>Coming soon!</h4><br />
+            <!--<?php anchor("ideas","See more...");?>-->
       </div>
       <div class="small-2 large-4 columns">
             <h3>Notifications</h3>
+            <h4>Coming soon!</h4>
       </div>
     </div>
 </div>

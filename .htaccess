@@ -9,3 +9,5 @@ RewriteRule ^ideas/*$ ./ideas.php
 RewriteRule ^login/*$ ./login.php
 RewriteRule ^logout/*$ ./logout.php
 RewriteRule ^signup/*$ ./signup.php
+RewriteRule ^events/(.+?)/(.+?)$ ./events.php?month=$1&year=$2 [QSA,L]
+RewriteRule ^events/(.+?)$ ./events.php?month=$1 [QSA,L]

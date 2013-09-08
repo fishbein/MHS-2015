@@ -18,6 +18,9 @@
       $('h1').delay('100').fadeIn('slow');
       $('p.one').delay('600').fadeIn('slow');
       $('p.two').delay('1200').fadeIn('slow');
+      $('h3').delay('1600').fadeIn('slow');
+      $('#info2').delay('2000').fadeIn('slow');
+      $('.slide').delay('2000').fadeIn('slow');
   });
     
   </script>

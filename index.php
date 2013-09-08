@@ -67,7 +67,7 @@
   <p class="one" style="display:none;">The unofficial Marlboro High School Class of 2015 website has arrived.</p>
 <p class="two" style="display:none;"><a href="/signup">Sign up today</a> so you can to view updates and information regarding class events and fundraisers. In addition, you can submit and vote on fundraising ideas.</p>
 </div>
-<?php } ?>
+<div id="info2" style="display:none; text-align:center; font-size: 22px; font-weight: 100; width:500px; margin: 0 auto;">
 Created by <a href="http://twitter.com/fishbein">@fishbein</a>.
 <br />
 <small>This site is not directly related to Marlboro High School nor is it related to the Freehold Regional High School District.</small>
